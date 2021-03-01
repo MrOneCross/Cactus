@@ -7,8 +7,14 @@
     <Filter Include="Cactus\Events">
       <UniqueIdentifier>{2C019D50-98C1-1887-61FC-6104CD7B5D63}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cactus\ImGui">
+      <UniqueIdentifier>{7241760A-5EA4-05AF-072A-3E65F36BD131}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\Cactus\Events\MouseEvent.h">
       <Filter>Cactus\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Cactus\ImGui\ImGuiLayer.h">
+      <Filter>Cactus\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Cactus\Layer.h">
       <Filter>Cactus</Filter>
     </ClInclude>
@@ -53,10 +62,15 @@
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\cactus_pch.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Cactus\InputManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Cactus\Application.cpp">
       <Filter>Cactus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cactus\ImGui\ImGuiLayer.cpp">
+      <Filter>Cactus\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Cactus\Layer.cpp">
       <Filter>Cactus</Filter>
@@ -71,5 +85,7 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\cactus_pch.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\Cactus\InputManager.cpp" />
   </ItemGroup>
 </Project>

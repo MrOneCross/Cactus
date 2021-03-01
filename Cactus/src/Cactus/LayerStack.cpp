@@ -19,11 +19,13 @@ namespace Cactus
 	void LayerStack::PushLayer(Layer* layer)
 	{
 		layerInsert = layers.emplace(layerInsert, layer);
+		layer->OnAttach();
 	}
 	
 	void LayerStack::PushOverlay(Layer* overlay)
 	{
 		layers.emplace_back(overlay);
+		overlay->OnAttach();
 	}
 
 	void LayerStack::PopLayer(Layer* layer)

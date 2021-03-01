@@ -3,7 +3,7 @@
 #include "cactus_pch.h"
 #include "Cactus/Events/Event.h"
 
-namespace Cactus 
+namespace Cactus
 {
 	class CACTUS_API KeyEvent : public Event
 	{
@@ -32,7 +32,7 @@ namespace Cactus
 			ss << "KeyPressedEvent: " << keyCode << " (" << repeatCount << ")";
 			return ss.str();
 		}
-		
+
 		EVENT_CLASS_TYPE(KeyPressed)
 	private:
 		int repeatCount;
@@ -55,5 +55,23 @@ namespace Cactus
 
 		//Generate basic stuff
 		EVENT_CLASS_TYPE(KeyReleased)
+	};
+
+
+	class CACTUS_API KeyTypedEvent : public KeyEvent
+	{
+	public:
+		KeyTypedEvent(int keycode)
+			: KeyEvent(keycode) {}
+
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyTypedEvent: " << keyCode;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyTyped)
 	};
 }

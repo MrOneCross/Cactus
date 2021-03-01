@@ -4,3 +4,6 @@
 [submodule "Cactus/vendor/GLFW"]
 	path = Cactus/vendor/GLFW
 	url = https://github.com/TheCherno/glfw
+[submodule "Cactus/vendor/imgui"]
+	path = Cactus/vendor/imgui
+	url = https://github.com/TheCherno/imgui
