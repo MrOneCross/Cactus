@@ -10,15 +10,23 @@ public:
 
 	void OnUpdate() override
 	{
-		CACTUS_INFO("ExampleLayer::Update");
+		if (Cactus::Input::KeyDown(65))
+		{
+			CACTUS_INFO("Moving left!");
+		}
+		else
+		{
+			CACTUS_INFO("Standing still!");
+		}
 	}
 
 	void OnEvent(Cactus::Event& event) override
 	{
-		CACTUS_TRACE("{0}",event);
+		//CACTUS_TRACE("{0}",event);
 	}
 
 };
+
 class Sandbox : public Cactus::Application
 {
 public:
@@ -26,6 +34,7 @@ public:
 	{
 		PushLayer(new ExampleLayer());
 		PushOverlay(new Cactus::ImGuiLayer());
+		PushOverlay(new Cactus::InputLayer());
 	}
 
 	~Sandbox()

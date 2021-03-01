@@ -35,7 +35,7 @@ namespace Cactus {
 
 	void Application::OnEvent(Event& e) 
 	{
-		CACTUS_CORE_TRACE(e);
+		//CACTUS_CORE_TRACE(e);
 
 		EventDispatcher dispatcher(e);
 

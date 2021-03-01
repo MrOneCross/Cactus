@@ -10,6 +10,9 @@
     <Filter Include="Cactus\ImGui">
       <UniqueIdentifier>{7241760A-5EA4-05AF-072A-3E65F36BD131}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cactus\Input">
+      <UniqueIdentifier>{477C770A-33DF-06AF-DC64-3F65C8A6D231}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
@@ -46,6 +49,12 @@
     <ClInclude Include="src\Cactus\ImGui\ImGuiLayer.h">
       <Filter>Cactus\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\Cactus\Input\Input.h">
+      <Filter>Cactus\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cactus\Input\InputLayer.h">
+      <Filter>Cactus\Input</Filter>
+    </ClInclude>
     <ClInclude Include="src\Cactus\Layer.h">
       <Filter>Cactus</Filter>
     </ClInclude>
@@ -58,12 +67,13 @@
     <ClInclude Include="src\Cactus\Window.h">
       <Filter>Cactus</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\cactus_pch.h" />
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
-    <ClInclude Include="src\Cactus\InputManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Cactus\Application.cpp">
@@ -71,6 +81,12 @@
     </ClCompile>
     <ClCompile Include="src\Cactus\ImGui\ImGuiLayer.cpp">
       <Filter>Cactus\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cactus\Input\Input.cpp">
+      <Filter>Cactus\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cactus\Input\InputLayer.cpp">
+      <Filter>Cactus\Input</Filter>
     </ClCompile>
     <ClCompile Include="src\Cactus\Layer.cpp">
       <Filter>Cactus</Filter>
@@ -81,11 +97,12 @@
     <ClCompile Include="src\Cactus\Log.cpp">
       <Filter>Cactus</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\cactus_pch.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
-    <ClCompile Include="src\Cactus\InputManager.cpp" />
   </ItemGroup>
 </Project>
